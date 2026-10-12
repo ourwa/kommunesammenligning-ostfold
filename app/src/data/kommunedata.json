@@ -1,0 +1,249 @@
+{
+  "hentet": "2026-10-12T21:28:28.601Z",
+  "kilde": "Statistisk sentralbyrå (SSB), statistikkbanken",
+  "fylke": {
+    "kode": "31",
+    "navn": "Østfold"
+  },
+  "indikatorer": [
+    {
+      "id": "andelBarn0til5",
+      "navn": "Andel barn 0-5 år",
+      "enhet": "prosent",
+      "aar": "2026",
+      "tabell": "07459",
+      "beskrivelse": "Antall innbyggere 0-5 år delt på totalt antall innbyggere per 1. januar 2026."
+    },
+    {
+      "id": "befolkningsvekst",
+      "navn": "Befolkningsvekst siste 5 år",
+      "enhet": "prosent",
+      "aar": "2021–2026",
+      "tabell": "07459",
+      "beskrivelse": "Endring i folketall fra 1. januar 2021 til 1. januar 2026. Tidsseriene er slått sammen over kommunereformene (SSB-kodeliste agg_KommSummer)."
+    },
+    {
+      "id": "barnehagedekning",
+      "navn": "Andel barn 1-5 år i barnehage",
+      "enhet": "prosent",
+      "aar": "2025",
+      "tabell": "13502",
+      "beskrivelse": "Andel barn 1-5 år i barnehage i forhold til innbyggere 1-5 år, slik SSB publiserer det."
+    },
+    {
+      "id": "kjopesumPerOmsetning",
+      "navn": "Gjennomsnittlig kjøpesum per boligomsetning",
+      "enhet": "1000 kr",
+      "aar": "2025",
+      "tabell": "06726",
+      "beregnet": true,
+      "beskrivelse": "Beregnet som samlet kjøpesum delt på antall omsetninger av boligeiendommer i fritt salg. SSB publiserer ikke gjennomsnittet på kommunenivå fordi sammensetningen av boligmassen varierer, så tallet bør ikke tolkes som prisnivået for en bestemt boligtype."
+    }
+  ],
+  "kommuner": [
+    {
+      "kode": "3101",
+      "navn": "Halden",
+      "indikatorer": {
+        "andelBarn0til5": 5,
+        "befolkningsvekst": 2.2,
+        "barnehagedekning": 94.7,
+        "kjopesumPerOmsetning": 3750
+      },
+      "grunnlag": {
+        "folketall": 32082,
+        "folketallStart": 31387,
+        "barn0til5": 1613,
+        "omsetninger": 448,
+        "kjopesum": 1680220
+      }
+    },
+    {
+      "kode": "3103",
+      "navn": "Moss",
+      "indikatorer": {
+        "andelBarn0til5": 5.3,
+        "befolkningsvekst": 7.1,
+        "barnehagedekning": 93.6,
+        "kjopesumPerOmsetning": 5374
+      },
+      "grunnlag": {
+        "folketall": 53207,
+        "folketallStart": 49668,
+        "barn0til5": 2836,
+        "omsetninger": 1068,
+        "kjopesum": 5739082
+      }
+    },
+    {
+      "kode": "3105",
+      "navn": "Sarpsborg",
+      "indikatorer": {
+        "andelBarn0til5": 6,
+        "befolkningsvekst": 5.7,
+        "barnehagedekning": 91.3,
+        "kjopesumPerOmsetning": 4229
+      },
+      "grunnlag": {
+        "folketall": 60614,
+        "folketallStart": 57372,
+        "barn0til5": 3615,
+        "omsetninger": 826,
+        "kjopesum": 3493095
+      }
+    },
+    {
+      "kode": "3107",
+      "navn": "Fredrikstad",
+      "indikatorer": {
+        "andelBarn0til5": 5.3,
+        "befolkningsvekst": 3.7,
+        "barnehagedekning": 94.5,
+        "kjopesumPerOmsetning": 4904
+      },
+      "grunnlag": {
+        "folketall": 86243,
+        "folketallStart": 83193,
+        "barn0til5": 4539,
+        "omsetninger": 1301,
+        "kjopesum": 6379890
+      }
+    },
+    {
+      "kode": "3110",
+      "navn": "Hvaler",
+      "indikatorer": {
+        "andelBarn0til5": 4,
+        "befolkningsvekst": 0.4,
+        "barnehagedekning": 93.6,
+        "kjopesumPerOmsetning": 5511
+      },
+      "grunnlag": {
+        "folketall": 4714,
+        "folketallStart": 4694,
+        "barn0til5": 188,
+        "omsetninger": 76,
+        "kjopesum": 418868
+      }
+    },
+    {
+      "kode": "3112",
+      "navn": "Råde",
+      "indikatorer": {
+        "andelBarn0til5": 5.4,
+        "befolkningsvekst": 4.3,
+        "barnehagedekning": 102.3,
+        "kjopesumPerOmsetning": 4428
+      },
+      "grunnlag": {
+        "folketall": 7892,
+        "folketallStart": 7568,
+        "barn0til5": 430,
+        "omsetninger": 125,
+        "kjopesum": 553512
+      }
+    },
+    {
+      "kode": "3114",
+      "navn": "Våler (Østfold)",
+      "indikatorer": {
+        "andelBarn0til5": 7.2,
+        "befolkningsvekst": 7.3,
+        "barnehagedekning": 94.7,
+        "kjopesumPerOmsetning": 4411
+      },
+      "grunnlag": {
+        "folketall": 6229,
+        "folketallStart": 5805,
+        "barn0til5": 449,
+        "omsetninger": 134,
+        "kjopesum": 591125
+      }
+    },
+    {
+      "kode": "3116",
+      "navn": "Skiptvet",
+      "indikatorer": {
+        "andelBarn0til5": 5,
+        "befolkningsvekst": 3,
+        "barnehagedekning": 93.3,
+        "kjopesumPerOmsetning": 3757
+      },
+      "grunnlag": {
+        "folketall": 3940,
+        "folketallStart": 3825,
+        "barn0til5": 198,
+        "omsetninger": 53,
+        "kjopesum": 199130
+      }
+    },
+    {
+      "kode": "3118",
+      "navn": "Indre Østfold",
+      "indikatorer": {
+        "andelBarn0til5": 5.7,
+        "befolkningsvekst": 6.1,
+        "barnehagedekning": 91.5,
+        "kjopesumPerOmsetning": 4011
+      },
+      "grunnlag": {
+        "folketall": 47943,
+        "folketallStart": 45201,
+        "barn0til5": 2709,
+        "omsetninger": 825,
+        "kjopesum": 3309389
+      }
+    },
+    {
+      "kode": "3120",
+      "navn": "Rakkestad",
+      "indikatorer": {
+        "andelBarn0til5": 5.6,
+        "befolkningsvekst": 4.4,
+        "barnehagedekning": 92.1,
+        "kjopesumPerOmsetning": 4033
+      },
+      "grunnlag": {
+        "folketall": 8583,
+        "folketallStart": 8222,
+        "barn0til5": 478,
+        "omsetninger": 104,
+        "kjopesum": 419410
+      }
+    },
+    {
+      "kode": "3122",
+      "navn": "Marker",
+      "indikatorer": {
+        "andelBarn0til5": 5,
+        "befolkningsvekst": 1.3,
+        "barnehagedekning": 94.7,
+        "kjopesumPerOmsetning": 2901
+      },
+      "grunnlag": {
+        "folketall": 3647,
+        "folketallStart": 3601,
+        "barn0til5": 183,
+        "omsetninger": 57,
+        "kjopesum": 165340
+      }
+    },
+    {
+      "kode": "3124",
+      "navn": "Aremark",
+      "indikatorer": {
+        "andelBarn0til5": 5.1,
+        "befolkningsvekst": 2.2,
+        "barnehagedekning": 90.2,
+        "kjopesumPerOmsetning": 2344
+      },
+      "grunnlag": {
+        "folketall": 1354,
+        "folketallStart": 1325,
+        "barn0til5": 69,
+        "omsetninger": 15,
+        "kjopesum": 35158
+      }
+    }
+  ]
+}

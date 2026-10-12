@@ -1,0 +1,69 @@
+/* Fargetokens. Mørk modus har egne verdier, ikke en automatisk invertering. */
+:root {
+  --side: #f3f3f1;
+  --flate: #fcfcfb;
+  --kant: #e2e2de;
+  --tekst: #1b1b1a;
+  --tekst-dempet: #5c5c57;
+  --rutenett: #e6e6e2;
+  --akse: #b9b9b3;
+  --lenke: #1d4ed8;
+  --melding-bakgrunn: #eef0f3;
+
+  /* Kommunefarger, lys modus */
+  --farge-a: #2563eb;
+  --farge-b: #d97706;
+
+  color-scheme: light dark;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  color: var(--tekst);
+  background: var(--side);
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --side: #121211;
+    --flate: #1a1a19;
+    --kant: #2f2f2c;
+    --tekst: #ececea;
+    --tekst-dempet: #a3a39d;
+    --rutenett: #2c2c2a;
+    --akse: #55554f;
+    --lenke: #93b4fb;
+    --melding-bakgrunn: #23252a;
+
+    /* Kommunefarger, mørk modus */
+    --farge-a: #3b82f6;
+    --farge-b: #d97706;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--side);
+  color: var(--tekst);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+  margin: 0;
+}
+
+a {
+  color: var(--lenke);
+}
+
+:focus-visible {
+  outline: 2px solid var(--lenke);
+  outline-offset: 2px;
+}

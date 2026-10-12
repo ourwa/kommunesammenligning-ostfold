@@ -1,0 +1,430 @@
+.side {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 32px 16px 48px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 32px;
+}
+
+.sidetopp {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.logo {
+  flex: none;
+  width: auto;
+  height: 56px;
+  margin-top: 2px;
+}
+
+.sidetopp-tekst {
+  min-width: 0;
+}
+
+.sidetopp h1 {
+  font-size: 1.75rem;
+}
+
+.ki-merknad {
+  margin: 6px 0 0;
+  font-size: 0.8rem;
+  color: var(--tekst-dempet);
+}
+
+@media (max-width: 480px) {
+  .sidetopp {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .logo {
+    height: 40px;
+  }
+}
+
+.ingress {
+  margin: 8px 0 0;
+  color: var(--tekst-dempet);
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+/* Kommunevelgere */
+.velgere {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 16px;
+}
+
+.velger {
+  display: grid;
+  gap: 6px;
+  font-weight: 600;
+}
+
+.velger-etikett {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.velger select {
+  font: inherit;
+  font-weight: 400;
+  padding: 8px 10px;
+  border: 1px solid var(--kant);
+  border-radius: 6px;
+  background: var(--flate);
+  color: var(--tekst);
+}
+
+.melding {
+  margin: 0;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: var(--melding-bakgrunn);
+  border: 1px solid var(--kant);
+}
+
+/* Felles identitetsmerker */
+.fargeprikk {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  flex: none;
+  vertical-align: -1px;
+  margin-right: 6px;
+}
+
+.farge-a {
+  background: var(--farge-a);
+}
+
+.farge-b {
+  background: var(--farge-b);
+}
+
+.bokstav {
+  font-weight: 700;
+}
+
+.merke {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 1px 8px;
+  border: 1px solid var(--tekst-dempet);
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--tekst);
+  vertical-align: 2px;
+  white-space: nowrap;
+}
+
+.merke-usikker {
+  border-style: dashed;
+}
+
+.undertekst {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--tekst-dempet);
+}
+
+.mangler {
+  color: var(--tekst-dempet);
+  font-style: italic;
+}
+
+/* Sammenligningstabell */
+.tabellramme {
+  overflow-x: auto;
+  background: var(--flate);
+  border: 1px solid var(--kant);
+  border-radius: 10px;
+}
+
+.sammenligning {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.sammenligning caption {
+  caption-side: bottom;
+  text-align: left;
+  padding: 10px 16px;
+  font-size: 0.85rem;
+  color: var(--tekst-dempet);
+}
+
+.sammenligning th,
+.sammenligning td {
+  padding: 12px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--kant);
+  vertical-align: top;
+}
+
+.sammenligning thead th {
+  font-size: 0.85rem;
+}
+
+.sammenligning tbody th {
+  font-weight: 600;
+}
+
+.sammenligning .tall {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.sammenligning .tall .merke {
+  margin-left: 6px;
+}
+
+/* Indikatorkort */
+.kortrutenett {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr));
+  gap: 16px;
+}
+
+.kort {
+  background: var(--flate);
+  border: 1px solid var(--kant);
+  border-radius: 10px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+  align-content: start;
+  min-width: 0;
+}
+
+.kort h3 {
+  font-size: 1.05rem;
+}
+
+.kort-tittel {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.kort-tittel > span {
+  min-width: 0;
+}
+
+.ikon {
+  flex: none;
+  width: 28px;
+  height: 28px;
+  margin-top: -2px;
+}
+
+.enhet {
+  margin: 4px 0 0;
+  font-size: 0.85rem;
+  color: var(--tekst-dempet);
+}
+
+.forklaring {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+  font-size: 0.9rem;
+}
+
+.forklaring li {
+  display: inline-flex;
+  align-items: center;
+}
+
+.forklaring .bokstav {
+  margin-right: 4px;
+}
+
+.fotnote {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--tekst-dempet);
+}
+
+.metadata {
+  border-top: 1px solid var(--kant);
+  padding-top: 12px;
+  font-size: 0.9rem;
+}
+
+.metadata p {
+  margin: 0 0 8px;
+}
+
+.kildelinje {
+  color: var(--tekst-dempet);
+}
+
+.beregnet-boks {
+  margin: 0 0 10px;
+  padding: 12px 14px;
+  border: 1px dashed var(--tekst-dempet);
+  border-radius: 8px;
+}
+
+.beregnet-boks ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+/* Søylediagram */
+.diagram {
+  position: relative;
+  width: 100%;
+}
+
+.diagram svg {
+  display: block;
+  overflow: visible;
+}
+
+.rutenett {
+  stroke: var(--rutenett);
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+
+.grunnlinje {
+  stroke: var(--akse);
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+
+.aksetekst {
+  fill: var(--tekst-dempet);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+
+.navnetekst {
+  fill: var(--tekst);
+  font-size: 13px;
+}
+
+.verditekst {
+  fill: var(--tekst);
+  font-size: 13px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.manglertekst {
+  fill: var(--tekst-dempet);
+  font-size: 12px;
+  font-style: italic;
+}
+
+.soyle-a {
+  fill: var(--farge-a);
+}
+
+.soyle-b {
+  fill: var(--farge-b);
+}
+
+.soyle.usikker {
+  fill-opacity: 0.45;
+}
+
+.soyle.aktiv {
+  filter: brightness(1.08);
+}
+
+.treffflate {
+  fill: transparent;
+  cursor: default;
+}
+
+.treffflate:focus {
+  outline: none;
+}
+
+.treffflate:focus-visible {
+  stroke: var(--lenke);
+  stroke-width: 2;
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 2;
+  min-width: 180px;
+  padding: 8px 12px;
+  background: var(--flate);
+  color: var(--tekst);
+  border: 1px solid var(--kant);
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 0.14);
+  font-size: 0.85rem;
+  pointer-events: none;
+}
+
+.tooltip-navn {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.tooltip-verdi {
+  font-variant-numeric: tabular-nums;
+}
+
+.tooltip-ekstra {
+  color: var(--tekst-dempet);
+}
+
+/* Bunntekst og KI-erklæring */
+.sidebunn {
+  display: grid;
+  gap: 16px;
+  border-top: 1px solid var(--kant);
+  padding-top: 24px;
+}
+
+.kilde {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--tekst-dempet);
+}
+
+.ki-erklaering {
+  padding: 16px 20px;
+  border: 2px dashed var(--tekst-dempet);
+  border-radius: 10px;
+  background: var(--flate);
+}
+
+.ki-erklaering h2 {
+  margin-bottom: 8px;
+}
+
+.ki-erklaering p {
+  margin: 0 0 8px;
+}
+
+.ki-erklaering ul {
+  margin: 0;
+  padding-left: 20px;
+  display: grid;
+  gap: 4px;
+}
